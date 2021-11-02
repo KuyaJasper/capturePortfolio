@@ -32,7 +32,7 @@ const AboutSection = () =>{
 // Styling
 
 const About = styled.div`
-min-min-height: 90vh;
+min-height: 90vh;
 display: flex ;
 align-items: center;
 justify-content: space-between;
