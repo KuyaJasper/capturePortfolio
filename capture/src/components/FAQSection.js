@@ -1,5 +1,9 @@
 import React from 'react';
 
+//Styled Components
+
+import styled from 'styled-components';
+
 const FaqSection = () => {
     return(
         <div className="faq">
@@ -36,5 +40,8 @@ const FaqSection = () => {
 
     )
 };
+
+//Styling
+
 
 export default FaqSection ;
