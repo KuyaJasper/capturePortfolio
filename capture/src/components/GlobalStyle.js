@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle =  createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
 *{
     margin: 0;
@@ -11,6 +11,8 @@ const GlobalStyle =  createGlobalStyle`
 body{
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
+    //Personal styling of text align.
+    /* text-align: center; */
 }
 
 button{
@@ -39,6 +41,7 @@ h2{
 
     h4{
         font-weight: bold;
+        font-size: 2rem;
     }
     a{
         font-size: 1.1rem;
@@ -54,7 +57,6 @@ h2{
         line-height: 150%;
     }
 
-`
-
+`;
 
 export default GlobalStyle;
