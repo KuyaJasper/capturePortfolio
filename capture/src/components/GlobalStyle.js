@@ -20,6 +20,7 @@ button{
     font-size: 1.1rem;
     cursor: pointer;
     padding: 1rem 2rem;
+    margin-top: 1rem;
     border: 3px solid #23b997;
     background: transparent;
     color: white;

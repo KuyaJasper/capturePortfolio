@@ -29,11 +29,12 @@ const AboutSection = () => {
         </motion.div>
         <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have!
+          <br></br>
+          <motion.button variants={fade}>Contact Us</motion.button>
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <Image>
-        <motion.img variants ={photoAnimation} src={home1} alt="man with a camera." />
+        <motion.img variants ={photoAnimation} initial='hidden' animate='show' src={home1} alt="man with a camera." />
       </Image>
       <Wave/>
     </About>
