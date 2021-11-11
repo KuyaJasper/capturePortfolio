@@ -4,43 +4,43 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { About } from '../styles';
+import Toggle from './Toggle';
+
+//Framer Motion
+import{AnimateSharedLayout} from "framer-motion";
+
 
 const FaqSection = () => {
+
     return(
         <Faq>
-            <h2>Any Questions <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How do I start?</h4>
+            <h2>Any Questions? <span>FAQ</span></h2>
+            <AnimateSharedLayout>
+            <Toggle title= 'How Do I Start?'>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Daily Schedule</h4>
+            </Toggle>
+            <Toggle title = 'What Is Your Daily Schedule?'>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Payment methods</h4>
+            </Toggle>
+            <Toggle title = 'What Payment Methods Do You Accept??'>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>What products do you offer?</h4>
+            </Toggle>
+            <Toggle title="What Products Do You Offer?"  >
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
+            </AnimateSharedLayout>
         </Faq>
 
     )
