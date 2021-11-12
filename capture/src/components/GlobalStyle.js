@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -57,7 +59,10 @@ h2{
         font-size: 1.4rem;
         line-height: 150%;
     }
-
+    .FontAwesome{
+        color:#23d997;
+        margin-left: 1rem;
+    }
 `;
 
 export default GlobalStyle;

@@ -10,6 +10,7 @@ import Toggle from './Toggle';
 import{AnimateSharedLayout} from "framer-motion";
 
 
+
 const FaqSection = () => {
 
     return(
@@ -28,7 +29,7 @@ const FaqSection = () => {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
                 </div>
             </Toggle>
-            <Toggle title = 'What Payment Methods Do You Accept??'>
+            <Toggle title = 'What Payment Methods Do You Accept?'>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>

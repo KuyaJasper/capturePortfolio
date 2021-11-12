@@ -29,10 +29,10 @@ const OurWork = () => {
       exit="exit"
     >
       <motion.div variants={sliderContainer}>
-      <Frame1 variants={slider}></Frame1>
-      <Frame2 variants={slider}></Frame2>
-      <Frame3 variants={slider}></Frame3>
-      <Frame4 variants={slider}></Frame4>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
@@ -99,17 +99,14 @@ const Frame1 = styled(motion.div)`
   z-index: 2;
 `;
 
-const Frame2= styled(Frame1)`
-background:#ff8efb;
-
-`
-const Frame3= styled(Frame1)`
-background:#8ed2ff;
-
-`
-const Frame4= styled(Frame1)`
-background:#8effa0;
-
-`
+const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
+`;
 
 export default OurWork;
