@@ -18,6 +18,7 @@ import {
   photoAnimation,
   lineAnimation,
 } from "../animation";
+import ScrollTop from "../components/scrollTop";
 
 const OurWork = () => {
   return (
@@ -57,6 +58,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="good times" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };

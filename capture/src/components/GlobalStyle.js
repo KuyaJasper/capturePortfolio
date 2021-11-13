@@ -19,6 +19,7 @@ body{
     -webkit-user-select:none;
     -webkit-touch-callout:none;
     -moz-user-select:none;
+    overflow-x: hidden;
 
 
 }
