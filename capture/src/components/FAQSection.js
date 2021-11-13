@@ -1,84 +1,97 @@
-import React from 'react';
+import React from "react";
 
 //Styled Components
 
-import styled from 'styled-components';
-import { About } from '../styles';
-import Toggle from './Toggle';
+import styled from "styled-components";
+import { About } from "../styles";
+import Toggle from "./Toggle";
 
 //Framer Motion
-import{AnimateSharedLayout} from "framer-motion";
+import { AnimateSharedLayout } from "framer-motion";
 
-
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 
 const FaqSection = () => {
 
-    return(
-        <Faq>
-            <h2>Any Questions? <span>FAQ</span></h2>
-            <AnimateSharedLayout>
-            <Toggle title= 'How Do I Start?'>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
-                </div>
-            </Toggle>
-            <Toggle title = 'What Is Your Daily Schedule?'>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
-                </div>
-            </Toggle>
-            <Toggle title = 'What Payment Methods Do You Accept?'>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
-                </div>
-            </Toggle>
-            <Toggle title="What Products Do You Offer?"  >
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet.</p>
-                </div>
-            </Toggle>
-            </AnimateSharedLayout>
-        </Faq>
+    const [element,controls] = useScroll();
 
-    )
+  return (
+    <Faq variants={scrollReveal} ref={element} animate={controls} initial="hidden">
+      <h2>
+        Any Questions? <span>FAQ</span>
+      </h2>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, amet.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What Is Your Daily Schedule?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, amet.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What Payment Methods Do You Accept?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, amet.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What Products Do You Offer?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, amet.
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
+    </Faq>
+  );
 };
 
 //Styling
 
-const Faq= styled(About) `
+const Faq = styled(About)`
+  display: block;
 
-display: block;
-
-span{
+  span {
     display: block;
+  }
 
-}
-
-h2{
+  h2 {
     padding-bottom: 2rem;
     font-weight: lighter;
-}
-.faq-line{
+  }
+  .faq-line {
     background: #cccccc;
     height: 0.2rem;
     margin: 2rem 0rem;
-    width:100%;
-}
-.question{
+    width: 100%;
+  }
+  .question {
     padding: 3rem 0rem;
     cursor: pointer;
-}
-.answer{
+  }
+  .answer {
     padding: 2rem 0rem;
-    p{
-        padding: 1rem 0rem;
+    p {
+      padding: 1rem 0rem;
     }
-}
-
+  }
 `;
 
-export default FaqSection ;
+export default FaqSection;

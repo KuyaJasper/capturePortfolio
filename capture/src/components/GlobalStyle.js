@@ -15,6 +15,12 @@ body{
     font-family: 'Inter', sans-serif;
     //Personal styling of text align.
     /* text-align: center; */
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -moz-user-select:none;
+
+
 }
 
 button{
