@@ -13,12 +13,12 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 
 import { useScroll } from "./useScroll";
-import { fade } from "../animation";
+import { scrollReveal } from "../animation";
 
 const ServicesSection = () => {
 const [element, controls]= useScroll ();
   return (
-    <Services variants={fade} animate={controls} initial="hidden" ref={element}>
+    <Services variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
       <Description>
         <h2>
           High <span>quality</span> service.
@@ -71,11 +71,19 @@ const Services = styled(About)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+
+  @media(max-width:1300px){
+
+}
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media(max-width:1300px){
+
+        justify-content: center;
+}
 `;
 
 const Card = styled.div`

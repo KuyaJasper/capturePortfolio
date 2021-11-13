@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+
 
 const GlobalStyle = createGlobalStyle`
 
@@ -8,6 +7,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+
+    @media(max-width:1700px){
+
+        font-size: 75%;
+    }
 }
 
 body{

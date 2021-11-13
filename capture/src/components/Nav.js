@@ -58,7 +58,24 @@ li{
 
 }
 
+@media(max-width:1300px){
+flex-direction: column;
+padding: 2rem 1rem;
+ul{
+    padding:2rem;
+    justify-content: space-around;
+    width: 100%;
+}
+li{
 
+    padding: 0;
+}
+#logo{
+    font-size: 5rem;
+    display: inline-block;
+}
+
+}
 
 `
 
