@@ -25,6 +25,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
+      <h1>HELLO</h1>
       <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.pathname}>
       <Route path="/" exact>
