@@ -30,6 +30,9 @@ function App() {
       <Route path="/" exact>
       <AboutUs />
       </Route>
+      <Route path="/capturePortfolio" exact>
+      <AboutUs />
+      </Route>
       <Route path="/work" exact>
       <OurWork/>
       </Route>
