@@ -5,6 +5,11 @@ import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
 import styled from "styled-components";
 
+//Icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+
 const ContactUs = () => {
   return (
     <ContactStyle
@@ -16,26 +21,20 @@ const ContactUs = () => {
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnimation}> Get in touch.</motion.h2>
+          <motion.h2 variants={titleAnimation} className="Title"> Get in touch.</motion.h2>
         </Hide>
       </Title>
       <div>
         <Hide>
         <Social variants={titleAnimation}>
           <Circle />
-          <h2>Send us an Email</h2>
+          <h2>Send us an Email <FontAwesomeIcon icon={faEnvelopeOpen} /></h2>
         </Social>
         </Hide>
         <Hide>
         <Social variants={titleAnimation}>
           <Circle />
-          <h2>Add us on Social media</h2>
-        </Social>
-        </Hide>
-        <Hide>
-        <Social variants={titleAnimation}>
-          <Circle />
-          <h2>Send us a message</h2>
+          <h2>Add us on Social <FontAwesomeIcon icon={faMobileAlt} /></h2>
         </Social>
         </Hide>
 
