@@ -2,9 +2,8 @@
 
 ## Description:
 
-The purpose of this project was to create a music player similar to popular music applications like Apple Music or Spotify.
+The purpose of this project was to create a portfolio using React. This is project is a good example to show of to prospective clients what their website might look like. 
 
-I utilized React Hooks, and Props.
 
 ## License:
 
@@ -15,6 +14,10 @@ I utilized React Hooks, and Props.
 This personal project was created with [React](https://github.com/facebook/create-react-app).
 
 The resources for this project came from [DevEd](https://developedbyed.com/)
+
+Icons are sourced from [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react)
+
+Styling was done using [Styled-Components](https://styled-components.com/)
 
 
 
